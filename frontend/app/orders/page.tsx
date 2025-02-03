@@ -1,7 +1,7 @@
-"use client"; // This makes the component client-side
+"use client";
 
 import { useState, useEffect, Suspense } from "react";
-import { useSearchParams } from "next/navigation"; // useSearchParams hook for URL query
+import { useSearchParams } from "next/navigation";
 import OrderDetails from "@/components/OrderDetails";
 import { SearchBar } from "@/components/SearchBar";
 
@@ -43,8 +43,8 @@ export default function OrderDetailsPage() {
 }
 
 function OrderDetailsWrapper() {
-    const searchParams = useSearchParams(); // Get search parameters from URL
-    const searchTerm = searchParams.get("search"); // Extract the search term from the URL
+    const searchParams = useSearchParams();
+    const searchTerm = searchParams.get("search");
 
     const [orderDetails, setOrderDetails] = useState<Order | null>(null);
 
