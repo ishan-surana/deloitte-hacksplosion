@@ -15,7 +15,7 @@ export default function ErrorLogs() {
     useEffect(() => {
         const fetchLogs = async () => {
             try {
-                const response = await fetch('https://deloitte-hacksplosion-backend.vercel.app/api/logs');
+                const response = await fetch('https://deloitte-hacksplosion.onrender.com/api/logs');
                 if (!response.ok) {
                     throw new Error('Failed to fetch logs');
                 }

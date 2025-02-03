@@ -19,7 +19,11 @@ interface Order {
 
 async function fetchOrderDetails(orderId: string): Promise<Order | null> {
     try {
+<<<<<<< HEAD
         const response = await fetch(`https://deloitte-hacksplosion-backend.vercel.app/api/order/${orderId}`);
+=======
+        const response = await fetch(`https://deloitte-hacksplosion.onrender.com/api/order/${orderId}`);
+>>>>>>> ce9d8be (Shifted backend to render)
         if (!response.ok) {
             throw new Error("Order not found!");
         }
